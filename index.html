@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Portfolio</title>
+		<link
+			rel="preload"
+			href="fonts/Montserrat-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/Montserrat-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body class="page__body">
+		<div class="site-container">
+			<!-- <div class="preloader" id="preloader">
+        <div class="preloader__box">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="content"> -->
+			<header class="header">
+				<div class="container header__container">
+					<a href="#home" class="header__logo">
+						<svg
+							width="50"
+							height="50"
+							viewBox="0 0 50 50"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect
+								y="25"
+								width="25"
+								height="25"
+								rx="5"
+								fill="#FF0000"
+							/>
+							<path
+								d="M8.162 43V33.2H12.95C14.182 33.2 15.106 33.4333 15.722 33.9C16.3473 34.3667 16.66 34.9827 16.66 35.748C16.66 36.2613 16.534 36.7093 16.282 37.092C16.03 37.4653 15.6847 37.7547 15.246 37.96C14.8073 38.1653 14.3033 38.268 13.734 38.268L14 37.694C14.616 37.694 15.162 37.7967 15.638 38.002C16.114 38.198 16.4827 38.492 16.744 38.884C17.0147 39.276 17.15 39.7567 17.15 40.326C17.15 41.166 16.8187 41.824 16.156 42.3C15.4933 42.7667 14.518 43 13.23 43H8.162ZM10.416 41.292H13.062C13.65 41.292 14.0933 41.1987 14.392 41.012C14.7 40.816 14.854 40.508 14.854 40.088C14.854 39.6773 14.7 39.374 14.392 39.178C14.0933 38.9727 13.65 38.87 13.062 38.87H10.248V37.218H12.67C13.2207 37.218 13.6407 37.1247 13.93 36.938C14.2287 36.742 14.378 36.448 14.378 36.056C14.378 35.6733 14.2287 35.3887 13.93 35.202C13.6407 35.006 13.2207 34.908 12.67 34.908H10.416V41.292Z"
+								fill="white"
+							/>
+							<rect
+								width="25"
+								height="25"
+								rx="5"
+								fill="#FF0000"
+							/>
+							<path
+								d="M11.162 18V8.2H13.43V18H11.162Z"
+								fill="white"
+							/>
+							<rect
+								x="25"
+								width="25"
+								height="25"
+								rx="5"
+								fill="#FF0000"
+							/>
+							<path
+								d="M33.514 18L30.308 8.2H32.66L35.446 16.88H34.27L37.182 8.2H39.282L42.082 16.88H40.948L43.804 8.2H45.974L42.768 18H40.332L37.854 10.384H38.498L35.95 18H33.514Z"
+								fill="white"
+							/>
+							<rect
+								x="25"
+								y="25"
+								width="25"
+								height="25"
+								rx="5"
+								fill="#FF0000"
+							/>
+							<path
+								d="M36.968 43.168C36.3053 43.168 35.694 43.0467 35.134 42.804C34.5833 42.552 34.1307 42.1973 33.776 41.74L35.036 40.228C35.3067 40.5827 35.5913 40.8533 35.89 41.04C36.1887 41.2173 36.5107 41.306 36.856 41.306C37.78 41.306 38.242 40.7647 38.242 39.682V35.02H34.798V33.2H40.496V39.556C40.496 40.7693 40.1973 41.6747 39.6 42.272C39.0027 42.8693 38.1253 43.168 36.968 43.168Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
+					<nav class="nav header__nav" title="" data-menu>
+						<ul class="list-reset nav__list">
+							<li class="nav__item">
+								<a href="#home" class="nav__link" data-menu-item
+									>Главная</a
+								>
+							</li>
+							<li class="nav__item">
+								<a
+									href="#about"
+									class="nav__link"
+									data-menu-item
+									>Обо мне</a
+								>
+							</li>
+							<li class="nav__item">
+								<a
+									href="#skills"
+									class="nav__link"
+									data-menu-item
+									>Навыки</a
+								>
+							</li>
+							<li class="nav__item">
+								<a
+									href="#projects"
+									class="nav__link"
+									data-menu-item
+									>Проекты</a
+								>
+							</li>
+							<li class="nav__item">
+								<a
+									href="#contact"
+									class="nav__link"
+									data-menu-item
+									>Контакты</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<button
+						class="btn-reset burger"
+						aria-label="Открыть меню"
+						aria-expanded="false"
+						data-burger
+					>
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</header>
+
+			<main class="main" data-menu-overlay>
+				<section class="section-offset hero" id="home">
+					<div class="container hero__container">
+						<picture>
+							<source
+								srcset="./img/my-photo-2.webp"
+								type="image/webp"
+							/>
+							<img
+								loading="lazy"
+								src="./img/my-photo-2.png"
+								class="image hero__image"
+								width="635"
+								height="635"
+								alt="Алексей"
+							/>
+						</picture>
+						<div class="hero__text">
+							<h1 class="hero__title">
+								Привет, меня зовут
+								<span class="hero__span hero__title-span"
+									>Алексей</span
+								>
+							</h1>
+							<h2 class="subtitle hero__subtitle">
+								Я <span class="hero__span hero__subtitle-span"
+									>веб-разработчик
+								</span>
+							</h2>
+							<p class="hero__description">
+								Мне 20 лет. Нравится создавать интересные
+								и увлекательные проекты.
+							</p>
+							<ul class="list-reset hero__social social">
+								<li class="social__item">
+									<a
+										href="https://github.com/IwannaBejutser"
+										target="_blank"
+										class="social__link"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+								<li class="social__item">
+									<a
+										href="https://t.me/pouuop"
+										target="_blank"
+										class="social__link"
+										><i class="fa-brands fa-telegram"></i
+									></a>
+								</li>
+							</ul>
+							<ul class="list-reset hero__list">
+								<li class="hero__item">
+									<a
+										href="./files/Resume.pdf"
+										class="hero__link"
+										download
+										id="downloadBtn"
+									>
+										Скачать резюме
+									</a>
+								</li>
+								<li class="hero__item">
+									<a
+										href="#contact"
+										class="hero__link hero__link-call"
+										>Связаться со мной</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hero__scroll">
+						<a href="#about" class="hero__scroll-link">
+							<div class="hero__scroll-mouse">
+								<svg
+									width="48px"
+									height="48px"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M11.9997 7V9M17.3323 16.0111L17.8121 8.81381C17.8191 8.70864 17.8226 8.65605 17.8249 8.60643C17.9006 6.98713 17.1865 5.43164 15.9092 4.43342C15.8701 4.40283 15.8279 4.37121 15.7436 4.30797C15.6065 4.20511 15.5379 4.15368 15.475 4.10896C13.394 2.63035 10.6053 2.63035 8.52435 4.10896C8.46142 4.15368 8.39285 4.20511 8.2557 4.30797C8.17138 4.37121 8.12921 4.40283 8.09007 4.43342C6.8128 5.43164 6.09874 6.98713 6.17441 8.60643C6.17673 8.65605 6.18023 8.70864 6.18724 8.81381L6.66706 16.0111C6.85422 18.8185 9.18601 21 11.9997 21C14.8133 21 17.1451 18.8185 17.3323 16.0111Z"
+										stroke="red"
+										stroke-width="2"
+										stroke-linecap="round"
+									/>
+								</svg>
+							</div>
+							<div class="hero__scroll-arrow">
+								<svg
+									width="48px"
+									height="48px"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M5.70711 4.29289C5.31658 3.90237 4.68342 3.90237 4.29289 4.29289C3.90237 4.68342 3.90237 5.31658 4.29289 5.70711L11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19.7071 5.70711C20.0976 5.31658 20.0976 4.68342 19.7071 4.29289C19.3166 3.90237 18.6834 3.90237 18.2929 4.29289L12 10.5858L5.70711 4.29289ZM5.70711 11.2929C5.31658 10.9024 4.68342 10.9024 4.29289 11.2929C3.90237 11.6834 3.90237 12.3166 4.29289 12.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L19.7071 12.7071C20.0976 12.3166 20.0976 11.6834 19.7071 11.2929C19.3166 10.9024 18.6834 10.9024 18.2929 11.2929L12 17.5858L5.70711 11.2929Z"
+										fill="red"
+									/>
+								</svg>
+							</div>
+						</a>
+					</div>
+				</section>
+				<section class="section-offset about" id="about">
+					<div class="container about__container">
+						<h2 class="section-title about__title">Обо мне</h2>
+						<div class="about__wrapper">
+							<article class="about__article article">
+								<h3 class="h3 article__title">Прошлое</h3>
+								<p class="text article__text">
+									Меня зовут Алексей, я родился и вырос
+									в Новосибирске. С программированием
+									я познакомился в 15 лет и с тех пор изучал
+									различные направления, включая мобильную
+									разработку, backend и gamedev. Однако
+									наибольшее вдохновение я нашел
+									в веб-разработке, особенно во frontend.
+								</p>
+							</article>
+							<article class="about__article article">
+								<h3 class="h3 article__title">Настоящее</h3>
+								<p class="text article__text">
+									На данный момент я являюсь
+									веб-разработчиком, который постоянно ищет
+									новые знания и подходы в своей работе.
+									Сейчас активно углубляюсь в изучение
+									JavaScript и его современных фреймворков,
+									а также осваиваю GSAP для создания анимаций
+									и динамичных интерфейсов, что позволяет мне
+									разрабатывать живые и интерактивные сайты.
+								</p>
+							</article>
+							<article class="about__article article">
+								<h3 class="h3 article__title">Будущее</h3>
+								<p class="text article__text">
+									В ближайшие годы я планирую продолжить
+									развитие в области фронтенд-разработки,
+									расширяя свои знания и навыки в работе с
+									современными технологиями и инструментами.
+									Моя цель — стать экспертом в JavaScript
+									и освоить новые фреймворки, такие как React
+									или Vue.js, чтобы создавать еще более
+									интерактивные и высокопроизводительные
+									веб-приложения. Кроме того, я стремлюсь
+									улучшить свои навыки работы с анимацией
+									и пользовательскими интерфейсами, чтобы мои
+									проекты не только решали задачи бизнеса,
+									но и радовали пользователей своим удобством
+									и визуальной привлекательностью.
+								</p>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-offset skills" id="skills">
+					<div class="container skills__container">
+						<h2 class="section-title skills__title">Мои навыки</h2>
+						<div class="skills__frontend frontend">
+							<h3 class="h3 skills__subtitle frontend__subtitle">
+								Веб-скиллы
+							</h3>
+							<ul class="list-reset skills__list frontend__list">
+								<li class="skills__item frontend__item">
+									<span>Html</span
+									><i class="fa-brands fa-html5"></i>
+								</li>
+								<li class="skills__item frontend__item">
+									<span>JavaScript</span
+									><i class="fa-brands fa-js"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__styling styling">
+							<h3 class="h3 skills__subtitle styling__subtitle">
+								Стиль & дизайн
+							</h3>
+							<ul class="list-reset skills__list styling__list">
+								<li class="skills__item styling__item">
+									<span>CSS</span
+									><i class="fa-brands fa-css3"></i>
+								</li>
+								<li class="skills__item styling__item">
+									<span>SCSS</span
+									><i class="fa-brands fa-sass"></i>
+								</li>
+								<li class="skills__item styling__item">
+									<span>LESS</span
+									><i class="fa-brands fa-less"></i>
+								</li>
+								<li class="skills__item styling__item">
+									<span>Bootstrap</span
+									><i class="fa-brands fa-bootstrap"></i>
+								</li>
+								<li class="skills__item styling__item">
+									<span>Tailwind CSS</span>
+									<svg
+										fill="#000000"
+										width="800px"
+										height="800px"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										xml:space="preserve"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"
+										/>
+									</svg>
+								</li>
+								<li class="skills__item styling__item">
+									<span>Figma</span
+									><i class="fa-brands fa-figma"></i>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__miscellaneous miscellaneous">
+							<h3
+								class="h3 skills__subtitle miscellaneous__subtitle"
+							>
+								Остальное
+							</h3>
+							<ul
+								class="list-reset skills__list miscellaneous__list"
+							>
+								<li class="skills__item miscellaneous__item">
+									<span>Git</span
+									><i class="fa-brands fa-git"></i>
+								</li>
+								<li class="skills__item miscellaneous__item">
+									<span>Rest APIs</span
+									><svg
+										width="800px"
+										height="800px"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<rect
+											width="24"
+											height="24"
+											fill="none"
+										/>
+										<path
+											d="M20,6H4A2,2,0,0,0,2,8v8a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V8A2,2,0,0,0,20,6ZM9.29,14.8,9,13.73H7.16L6.87,14.8H5.17L7,9.07H9.09L11,14.8Zm6.34-3.14a1.7,1.7,0,0,1-.36.64,1.82,1.82,0,0,1-.67.44,2.75,2.75,0,0,1-1,.17h-.44V14.8H11.6V9.09h2a2.43,2.43,0,0,1,1.62.47,1.67,1.67,0,0,1,.55,1.35A2.36,2.36,0,0,1,15.63,11.66Zm2.58,3.14H16.66V9.09h1.55ZM8.45,11.53l.24.93H7.48l.24-.93c0-.13.08-.28.12-.47s.09-.38.13-.57a4.63,4.63,0,0,0,.1-.48c0,.13.07.29.11.5l.15.58Zm5.59-1a.57.57,0,0,1,.16.43.75.75,0,0,1-.11.42.59.59,0,0,1-.27.22.9.9,0,0,1-.37.07h-.31V10.34h.4A.63.63,0,0,1,14,10.51Z"
+											fill-rule="evenodd"
+										/>
+									</svg>
+								</li>
+								<li class="skills__item miscellaneous__item">
+									<span>Gulp</span
+									><i class="fa-brands fa-gulp"></i>
+								</li>
+								<li class="skills__item miscellaneous__item">
+									<span>Wordpress</span
+									><i class="fa-brands fa-wordpress"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section-offset projects" id="projects">
+					<div class="container projects__container">
+						<h2 class="section-title projects__title">Проекты</h2>
+						<div class="projects__wrapper">
+							<div class="project">
+								<img
+									loading="lazy"
+									src="./img/start-the-history.png"
+									class="image project__image"
+									alt="Проект 'Start the History'"
+								/>
+								<div class="project__caption">
+									<h4 class="h4 project__title">
+										StartTheHistory
+									</h4>
+									<ul
+										class="list-reset project__list project__stack"
+									>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-html5"></i>
+											HTML
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-sass"></i
+											>SCSS
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-js"></i
+											>JavaScript
+										</li>
+									</ul>
+									<p class="text project__text">
+										Сайт-визитка о книге про инвестиции.
+									</p>
+									<ul
+										class="list-reset project__list project__links"
+									>
+										<li class="project__links-item">
+											<a
+												href="https://github.com/IwannaBejutser/StartHistory"
+												class="project__link project__link-code"
+												target="_blank"
+											>
+												<i
+													class="fa-brands fa-github"
+												></i
+												>Код</a
+											>
+										</li>
+										<li class="project__links-item">
+											<a
+												href="https://iwannabejutser.github.io/StartHistory/"
+												class="project__link project__link-site"
+												target="_blank"
+											>
+												<i
+													class="fa-solid fa-external-link-square-alt"
+												></i>
+												Сайт</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="project">
+								<img
+									loading="lazy"
+									src="./img/avion.png"
+									class="image project__image"
+									alt="Проект 'Avion'"
+								/>
+								<div class="project__caption">
+									<h4 class="h4 project__title">Avion</h4>
+									<ul
+										class="list-reset project__list project__stack"
+									>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-html5"></i>
+											HTML
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-sass"></i
+											>SCSS
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-js"></i
+											>JavaScript
+										</li>
+									</ul>
+									<p class="text project__text">
+										Интернет-магазин мебели.
+									</p>
+									<ul
+										class="list-reset project__list project__links"
+									>
+										<li class="project__links-item">
+											<a
+												href="https://github.com/IwannaBejutser/Avion"
+												class="project__link project__link-code"
+												target="_blank"
+											>
+												<i
+													class="fa-brands fa-github"
+												></i
+												>Код</a
+											>
+										</li>
+										<li class="project__links-item">
+											<a
+												href="https://iwannabejutser.github.io/Avion/"
+												class="project__link project__link-site"
+												target="_blank"
+											>
+												<i
+													class="fa-solid fa-external-link-square-alt"
+												></i>
+												Сайт</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="project">
+								<img
+									loading="lazy"
+									src="./img/castaway.png"
+									class="image project__image"
+									alt="Проект 'Castaway'"
+								/>
+								<div class="project__caption">
+									<h4 class="h4 project__title">Castaway</h4>
+									<ul
+										class="list-reset project__list project__stack"
+									>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-html5"></i>
+											HTML
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-sass"></i
+											>SCSS
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-js"></i
+											>JavaScript
+										</li>
+									</ul>
+									<p class="text project__text">
+										Лендинг о подкасте.
+									</p>
+									<ul
+										class="list-reset project__list project__links"
+									>
+										<li class="project__links-item">
+											<a
+												href="https://github.com/IwannaBejutser/Castaway"
+												class="project__link project__link-code"
+												target="_blank"
+											>
+												<i
+													class="fa-brands fa-github"
+												></i
+												>Код</a
+											>
+										</li>
+										<li class="project__links-item">
+											<a
+												href="https://iwannabejutser.github.io/Castaway/"
+												class="project__link project__link-site"
+												target="_blank"
+											>
+												<i
+													class="fa-solid fa-external-link-square-alt"
+												></i>
+												Сайт</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="project">
+								<img
+									loading="lazy"
+									src="./img/portfolio-designer.png"
+									class="image project__image"
+									alt="Проект 'Портфолио дизайнера'"
+								/>
+								<div class="project__caption">
+									<h4 class="h4 project__title">
+										Portfolio designer
+									</h4>
+									<ul
+										class="list-reset project__list project__stack"
+									>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-html5"></i>
+											HTML
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-sass"></i
+											>SCSS
+										</li>
+										<li class="project__stack-item">
+											<i class="fa-brands fa-js"></i
+											>JavaScript
+										</li>
+									</ul>
+									<p class="text project__text">
+										Портфолио дизайнера.
+									</p>
+									<ul
+										class="list-reset project__list project__links"
+									>
+										<li class="project__links-item">
+											<a
+												href="https://github.com/IwannaBejutser/Kelvin"
+												class="project__link project__link-code"
+												target="_blank"
+											>
+												<i
+													class="fa-brands fa-github"
+												></i
+												>Код</a
+											>
+										</li>
+										<li class="project__links-item">
+											<a
+												href="https://iwannabejutser.github.io/Kelvin/"
+												class="project__link project__link-site"
+												target="_blank"
+											>
+												<i
+													class="fa-solid fa-external-link-square-alt"
+												></i>
+												Сайт</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-offset contact" id="contact">
+					<div class="container contact__container">
+						<h2 class="section-title contact__title">
+							Связаться <span class="contact__span">со мной</span>
+						</h2>
+						<form
+							action="#"
+							class="contact__form form"
+							id="contactForm"
+						>
+							<label class="form__label">
+								Имя
+								<input
+									type="text"
+									name="Имя"
+									class="input-reset form__input"
+									id="name"
+									required
+									placeholder="Имя*"
+								/>
+							</label>
+							<label class="form__label">
+								Email
+								<input
+									type="email"
+									name="Email"
+									class="input-reset form__input"
+									id="email"
+									required
+									placeholder="Email*"
+								/>
+							</label>
+							<label class="form__label">
+								Тема
+								<input
+									type="text"
+									name="Тема"
+									class="input-reset form__input"
+									id="subject"
+									required
+									placeholder="Тема*"
+								/>
+							</label>
+							<label class="form__label">
+								Сообщение
+								<textarea
+									name="Сообщение"
+									class="textarea-reset form__textarea"
+									id="message"
+									required
+									placeholder="Сообщение*"
+									rows="6"
+								></textarea>
+							</label>
+							<button class="btn-reset form__btn" id="form-btn">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="container footer__container">
+					<p class="footer__copyright">
+						<i class="fa-regular fa-copyright"></i> IWannaBeJutser |
+						All Rights Reserved
+					</p>
+				</div>
+			</footer>
+
+			<!-- </div> -->
+		</div>
+	</body>
+</html>
